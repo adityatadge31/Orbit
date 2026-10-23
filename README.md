@@ -1,4 +1,4 @@
-# Orbit — WTL Exam Website (GitHub CI/CD edition)
+# Orbit — A Basic MiniPro for Econ (GitHub CI/CD edition)
 
 A compact exam project with **public page, login, and admin dashboard**. Five application source files (`index.html`, `style.css`, `script.js`, `server.js`, `db.js`); SVGs in `assets/`. The extra `.github/`, `tests/`, `render.yaml`, `.gitignore` files are deployment configuration, not app complexity. No npm install required.
 
