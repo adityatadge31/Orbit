@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>orbit. — Objects for better days</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- PAGE 1: PUBLIC STOREFRONT -->
+  <div id="storePage" class="page">
+    <div class="announcement">A LITTLE JOY, DELIVERED. <span>FREE SHIPPING OVER ₹2,999</span> <span aria-hidden="true">✳</span></div>
+    <header class="store-nav shell">
+      <a href="#home" class="brand">orbit<span>.</span></a>
+      <nav class="main-links" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#collection">Shop collection</a><a href="#story">Our story</a>
+      </nav>
+      <div class="nav-actions"><a class="nav-login" href="#login">Admin login <span>↗</span></a>
+        <button id="cartButton" class="bag-button" aria-label="Open shopping bag">Bag <span id="cartCount">0</span></button>
+      </div>
+    </header>
+    <main>
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR EVERYDAY, REIMAGINED</div>
+          <h1>Small things.<br><em>Big feelings.</em></h1>
+          <p>Good design has a way of making ordinary moments feel extraordinary. Meet the essentials you'll love to live with.</p>
+          <a href="#collection" class="button button-dark">Explore collection <span>↗</span></a>
+          <div class="hero-social"><div class="social-faces"><span>J</span><span>A</span><span>M</span></div><div><strong>2,000+ happy people</strong><small>and counting, one object at a time</small></div></div>
+        </div>
+        <div class="hero-art">
+          <span class="hero-circle circle-a"></span><span class="hero-circle circle-b"></span>
+          <img src="assets/hero.svg" alt="Illustration of premium lavender headphones" class="hero-image">
+          <div class="floating-note"><span class="sparkle">✳</span><div><small>THIS WEEK'S FAVOURITE</small><strong>Cloud Headphones</strong></div><span class="note-arrow">↗</span></div>
+          <span class="vertical-stamp">DESIGNED FOR THE EVERYDAY ↗</span>
+        </div>
+      </section>
+      <section class="value-strip"><div class="shell value-inner"><span>✳ &nbsp; Thoughtfully selected</span><span>↗ &nbsp; Made to make you smile</span><span>◎ &nbsp; Everyday essentials</span><span>✦ &nbsp; A little more extraordinary</span></div></section>
+      <section id="collection" class="collection shell">
+        <div class="section-top"><div><span class="kicker">THE GOOD STUFF / 001</span><h2>A little something <em>for everyone.</em></h2></div><p>Carefully curated. Delightfully useful.<br>Pick your next favourite thing.</p></div>
+        <div class="filters" id="filters"><button class="chip selected" data-category="All">All objects</button><button class="chip" data-category="Audio">Audio</button><button class="chip" data-category="Tech">Tech</button><button class="chip" data-category="Lifestyle">Lifestyle</button></div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+      <section id="story" class="story shell"><div class="story-icon">✳</div><span class="kicker">OUR LITTLE PHILOSOPHY</span><h2>Less ordinary.<br><em>More orbit.</em></h2><p>We believe the things around us should spark a little joy. Beautiful objects, honest prices, and the freedom to make every day your own.</p><a class="button button-light" href="#collection">Find your favourite <span>↗</span></a><span class="story-decoration">ORBIT / 2026</span></section>
+    </main>
+    <footer class="footer shell"><a class="brand" href="#home">orbit<span>.</span></a><span>MADE FOR CURIOUS PEOPLE, EVERYWHERE.</span><span>© 2026 ORBIT STUDIO</span></footer>
+  </div>
+
+  <!-- PAGE 2: LOGIN -->
+  <section id="loginPage" class="page hidden login-layout">
+    <div class="login-art"><a href="#home" class="brand light-brand">orbit<span>.</span></a><div class="login-art-center"><span class="kicker">DESIGN MEETS SIMPLICITY</span><h2>Good things<br>start <em>here.</em></h2><img src="assets/hero.svg" alt="Lavender headphones illustration"></div><p>CURATED OBJECTS. BETTER EVERYDAYS. <span>✳</span></p></div>
+    <div class="login-side"><a class="back-link" href="#home">← Back to store</a><div class="login-card"><span class="kicker">ADMIN ACCESS / 002</span><h2>Welcome<br><em>back.</em></h2><p>Sign in to manage your little corner of the internet.</p><form id="loginForm"><label for="email">Email address</label><input id="email" type="email" autocomplete="username" value="admin@orbit.shop" required><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" value="admin123" required><button class="button button-purple full-button" type="submit">Sign in to dashboard <span>↗</span></button><p class="form-error" id="loginError" role="alert"></p></form><div class="demo-hint"><strong>DEMO ACCOUNT</strong><span>admin@orbit.shop &nbsp;/&nbsp; admin123</span></div></div><small class="login-foot">ORBIT STORE MANAGEMENT &nbsp;·&nbsp; DEMO PROJECT</small></div>
+  </section>
+
+  <!-- PAGE 3: ADMIN DASHBOARD -->
+  <section id="adminPage" class="page hidden admin-layout">
+    <aside class="sidebar"><a href="#admin" class="brand light-brand">orbit<span>.</span></a><span class="sidebar-caption">STORE MANAGEMENT</span><div class="side-group"><span class="side-label">WORKSPACE</span><a href="#admin" class="side-link active"><span>▦</span> Overview</a><a href="#inventory" class="side-link"><span>◫</span> Products</a></div><div class="side-group"><span class="side-label">GENERAL</span><a href="#home" class="side-link"><span>↗</span> View storefront</a><button id="logoutButton" class="side-link"><span>⇥</span> Log out</button></div><div class="sidebar-bottom"><div class="help-orb">✳</div><strong>Your store, your way.</strong><p>Little things. Big possibilities.</p></div></aside>
+    <main class="admin-main"><div class="admin-header"><div class="breadcrumb">Workspace <span>/</span> Overview</div><div class="admin-account"><span class="admin-badge">LIVE DEMO</span><span class="avatar">A</span><div><strong>Admin</strong><small>Store owner</small></div></div></div>
+      <div class="dashboard-content"><div class="dashboard-heading"><div><span class="kicker">STORE OVERVIEW</span><h1>Good morning, Admin <span>✳</span></h1><p>Here's what's happening in your store today.</p></div><a href="#home" class="button button-white">View store <span>↗</span></a></div>
+        <div class="stat-grid"><article class="stat"><div class="stat-head"><span>Revenue</span><span class="stat-icon violet">↗</span></div><strong id="revenueMetric">₹0</strong><small><b>+12.8%</b> vs last month</small></article><article class="stat"><div class="stat-head"><span>Total orders</span><span class="stat-icon yellow">▤</span></div><strong id="ordersMetric">0</strong><small><b>+8.2%</b> vs last month</small></article><article class="stat"><div class="stat-head"><span>Products</span><span class="stat-icon pink">◈</span></div><strong id="productsMetric">0</strong><small>Listed in your storefront</small></article><article class="stat"><div class="stat-head"><span>Items in stock</span><span class="stat-icon green">◎</span></div><strong id="stockMetric">0</strong><small>Across all your products</small></article></div>
+        <div class="dashboard-panels"><article class="panel chart-panel"><div class="panel-heading"><div><h3>Revenue overview</h3><p>Your store's performance at a glance</p></div><span class="pill">Last 6 months⌄</span></div><div class="chart-head"><strong>₹84,250</strong><span>↗ 12.8% growth</span></div><div id="revenueChart" class="bar-chart" aria-label="Illustrative monthly revenue chart"></div></article><article class="panel orders-panel"><div class="panel-heading"><div><h3>Recent orders</h3><p>Fresh off the press</p></div><span class="pill">Latest 4</span></div><div id="ordersList"></div></article></div>
+        <article class="panel inventory-panel" id="inventory"><div class="panel-heading"><div><h3>Product inventory <span id="inventoryCount"></span></h3><p>Manage your products, prices and stock</p></div><button id="addProductButton" class="button button-purple">+ Add product</button></div><div class="table-scroll"><table><thead><tr><th>PRODUCT</th><th>CATEGORY</th><th>PRICE</th><th>STOCK</th><th>STATUS</th><th>ACTIONS</th></tr></thead><tbody id="inventoryBody"></tbody></table></div></article>
+        <footer class="admin-footer">© 2026 ORBIT STUDIO <span>BUILT WITH HTML · CSS · JAVASCRIPT · NODE.JS</span></footer>
+      </div>
+    </main>
+  </section>
+
+  <!-- Shopping bag & product editor -->
+  <div id="overlay" class="overlay hidden"></div>
+  <aside id="cartDrawer" class="cart-drawer" aria-label="Shopping bag"><div class="drawer-top"><h2>Your bag <span id="drawerCount">(0)</span></h2><button id="closeCart" aria-label="Close bag">×</button></div><p>A little happiness in the making.</p><div id="cartItems" class="cart-items"></div><div class="cart-bottom"><div><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><button id="checkoutButton" class="button button-dark full-button">Checkout <span>↗</span></button><small>Demo only — no real payments are processed.</small></div></aside>
+  <dialog id="productDialog"><form id="productForm"><div class="dialog-heading"><div><span class="kicker">INVENTORY EDITOR</span><h2 id="dialogTitle">Add product</h2></div><button type="button" id="closeDialog" aria-label="Close editor">×</button></div><input type="hidden" id="productId"><label for="productName">Product name</label><input id="productName" required maxlength="60"><div class="form-row"><div><label for="productPrice">Price (₹)</label><input id="productPrice" type="number" min="1" required></div><div><label for="productStock">Stock</label><input id="productStock" type="number" min="0" required></div></div><label for="productCategory">Category</label><select id="productCategory"><option>Audio</option><option>Tech</option><option>Lifestyle</option></select><label for="productImage">Product image</label><select id="productImage"><option value="headphones.svg">Headphones</option><option value="watch.svg">Smartwatch</option><option value="speaker.svg">Speaker</option><option value="camera.svg">Camera</option><option value="lamp.svg">Desk lamp</option><option value="keyboard.svg">Keyboard</option></select><button class="button button-purple full-button" type="submit">Save product <span>↗</span></button></form></dialog>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>

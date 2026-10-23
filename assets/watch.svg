@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="500" viewBox="0 0 600 500" role="img">
+<defs>
+ <linearGradient id="lav" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efe5ff"/><stop offset=".44" stop-color="#b49aee"/><stop offset="1" stop-color="#7255ce"/></linearGradient>
+ <linearGradient id="dark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#424264"/><stop offset="1" stop-color="#171b31"/></linearGradient>
+ <linearGradient id="peach" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff2e7"/><stop offset="1" stop-color="#d9a79b"/></linearGradient>
+ <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e1f8e9"/><stop offset="1" stop-color="#83c8b2"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8d9"/><stop offset="1" stop-color="#cfaa68"/></linearGradient>
+ <radialGradient id="shine"><stop stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <filter id="shadow" x="-55%" y="-55%" width="210%" height="230%"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="tinyshadow" x="-55%" y="-55%" width="210%" height="230%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+
+
+<ellipse cx="302" cy="425" rx="138" ry="22" fill="#88706b" opacity=".25" filter="url(#shadow)"/>
+<g transform="rotate(-19 303 255)">
+ <rect x="244" y="73" width="118" height="345" rx="52" fill="#b7a0a1"/>
+ <rect x="254" y="78" width="98" height="340" rx="48" fill="url(#peach)"/>
+ <path d="M267 113 h73 M267 370 h73" stroke="#c3a8a5" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+ <rect x="203" y="156" width="196" height="209" rx="50" fill="#b9a6a7"/>
+ <rect x="211" y="153" width="179" height="199" rx="44" fill="#e9d4cb" stroke="#fff5ea" stroke-width="7"/>
+ <rect x="229" y="172" width="144" height="165" rx="33" fill="url(#dark)"/>
+ <circle cx="301" cy="251" r="47" fill="none" stroke="#e5a7c2" stroke-width="13" stroke-dasharray="230 55" transform="rotate(-90 301 251)"/>
+ <circle cx="301" cy="251" r="32" fill="none" stroke="#b8cfae" stroke-width="10" stroke-dasharray="140 55" transform="rotate(-90 301 251)"/>
+ <path d="M301 249l-2-28 M301 250l26 15" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+ <circle cx="301" cy="250" r="5" fill="#fff"/>
+ <rect x="393" y="217" width="11" height="32" rx="5" fill="#bfa4a0"/>
+ <path d="M250 176 Q272 168 285 170" fill="none" stroke="#fff" stroke-width="5" opacity=".5"/>
+</g>
+</svg>

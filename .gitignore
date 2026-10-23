@@ -1,0 +1,11 @@
+# Local records may contain student or borrower information.
+# Never commit generated data files.
+data.json
+store-data.json
+.DS_Store
+.env
+node_modules/
+coverage/
+
+.DS_Store
+store-data.json

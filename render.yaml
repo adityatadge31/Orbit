@@ -1,0 +1,15 @@
+# Render Blueprint: import via New > Blueprint.
+# Render deploys only after GitHub Actions passes on main.
+services:
+  - type: web
+    name: orbit-wtl-demo
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: echo "No dependencies to install"
+    startCommand: node server.js
+    healthCheckPath: /health
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: NODE_ENV
+        value: production
